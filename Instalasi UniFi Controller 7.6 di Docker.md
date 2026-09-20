@@ -1,8 +1,6 @@
 # **Instalasi UniFi Controller 7.6 di Docker**
 
-[https://gemini.google.com/app/1bc648c237dcbb59](https://gemini.google.com/app/1bc648c237dcbb59)
 
-&nbsp;
 
 *User prompt: berikan saya step by step dalam menginstall unifi controller 7.6 yang berjalan di docker dengan operating sistem ubuntu 24.04. \- simpan semua authentication menggunakan .env \- gunakan command sesuai dengan official guide dari mulai install docker sampai running unifi*
 
