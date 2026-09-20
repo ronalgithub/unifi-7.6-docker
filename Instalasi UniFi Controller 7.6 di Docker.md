@@ -54,7 +54,7 @@ Gunakan perintah berikut untuk menambahkan repositori stabil Docker ke dalam daf
 
 &nbsp;
 
-**4Install Docker Engine & Docker Compose**
+**4. Install Docker Engine & Docker Compose**
 
 Langkah Resmi Docker
 
@@ -73,7 +73,7 @@ Lakukan pembaruan indeks paket sekali lagi, lalu install Docker Engine beserta p
 
 &nbsp;
 
-**5Siapkan Direktori Kerja UniFi**
+**5. Siapkan Direktori Kerja UniFi**
 
 Struktur Folder Workspace
 
@@ -86,7 +86,7 @@ Buat folder khusus untuk menampung seluruh berkas konfigurasi UniFi dan database
 
 &nbsp;
 
-**6Buat File Autentikasi (.env)**
+**6. Buat File Autentikasi (.env)**
 
 Keamanan Variabel Lingkungan
 
@@ -113,7 +113,7 @@ Sesuai permintaan Anda, seluruh kredensial database disimpan secara terisolasi d
 
 &nbsp;
 
-**7Buat Script Inisialisasi Database (init-mongo.js)**
+**7. Buat Script Inisialisasi Database (init-mongo.js)**
 
 Konfigurasi Otomatis MongoDB
 
@@ -134,7 +134,7 @@ Karena citra (*image*) resmi MongoDB memerlukan pembuatan database user non-root
 
 &nbsp;
 
-**8Susun Berkas docker-compose.yml**
+**8. Susun Berkas docker-compose.yml**
 
 Orkestrasi Aplikasi
 
@@ -187,7 +187,7 @@ Sekarang, buat file orkestrasinya (nano docker-compose.yml). Di sini kita menggu
 
 &nbsp;
 
-**9Jalankan Seluruh Stack Kontainer**
+**9. Jalankan Seluruh Stack Kontainer**
 
 Deployment Akhir
 
@@ -231,7 +231,7 @@ Mari kita bereskan ini dengan dua langkah cepat berikut:
 
 &nbsp;
 
-**1Cek Penggunaan Sintaksis (Spasi vs Strip)**
+**1. Cek Penggunaan Sintaksis (Spasi vs Strip)**
 
 Deteksi awal
 
@@ -245,7 +245,7 @@ Jika perintah di atas memunculkan versi (misalnya *Docker Compose version v2.x.x
 
 &nbsp;
 
-**2Install Ulang Plugin via APT**
+**2. Install Ulang Plugin via APT**
 
 Jika perintah tetap tidak ditemukan
 
@@ -281,7 +281,7 @@ Mari kita telusuri dan selesaikan masalah ini secara berurutan menggunakan langk
 
 &nbsp;
 
-**1Coba Jalankan Menggunakan Sudo**
+**1. Coba Jalankan Menggunakan Sudo**
 
 Uji hak akses dasar
 
@@ -296,7 +296,7 @@ Langkah pertama adalah memastikan apakah ini murni masalah izin akses (*permissi
 
 &nbsp;
 
-**2Terapkan Perubahan Grup Docker Tanpa Log Out**
+**2. Terapkan Perubahan Grup Docker Tanpa Log Out**
 
 Perbarui sesi user
 
@@ -314,7 +314,7 @@ Setelah itu, coba jalankan kembali tanpa sudo:
 
 &nbsp;
 
-**3Pastikan Layanan Docker Sedang Berjalan**
+**3. Pastikan Layanan Docker Sedang Berjalan**
 
 Cek status engine
 
@@ -333,7 +333,7 @@ Lalu cek statusnya untuk memastikan keterangannya berwarna hijau (**active/runni
 
 &nbsp;
 
-**4Periksa Konflik Docker Versi Snap**
+**4. Periksa Konflik Docker Versi Snap**
 
 Atasi konflik Ubuntu 24.04
 
@@ -372,7 +372,7 @@ Mari kita eksekusi langkah akhir untuk menyalakan dan mengonfigurasi UniFi Contr
 
 &nbsp;
 
-**1Masuk ke Direktori UniFi**
+**1. Masuk ke Direktori UniFi**
 
 Kembali ke Workspace
 
@@ -386,7 +386,7 @@ Pastikan Anda berada di dalam folder infrastruktur tempat berkas .env, init-mong
 
 &nbsp;
 
-**2Jalankan Kontainer UniFi & MongoDB**
+**2. Jalankan Kontainer UniFi & MongoDB**
 
 Perintah Resmi Docker Compose
 
@@ -400,7 +400,7 @@ Docker akan otomatis mengunduh (*pull*) image MongoDB 7.0 dan UniFi 7.6.126 (jik
 
 &nbsp;
 
-**3Pantau Proses Inisialisasi Awal**
+**3. Pantau Proses Inisialisasi Awal**
 
 Verifikasi Sistem
 
@@ -463,7 +463,7 @@ Perhatikan baris terakhir pada log tersebut. Masalah Anda hampir pasti disebabka
 
 &nbsp;
 
-**1Masalah Instruksi AVX CPU (Error:**
+**1. Masalah Instruksi AVX CPU (Error:**
 
 Penyebab \#1 (Paling Sering di VPS/VM)
 
@@ -487,7 +487,7 @@ Banyak VPS murah (seperti DigitalOcean, Hetzner, Proxmox tanpa passthrough) atau
 
 &nbsp;
 
-**2Masalah Izin Akses Folder (Permission Denied)**
+**2. Masalah Izin Akses Folder (Permission Denied)**
 
 Penyebab \#2
 
@@ -501,7 +501,7 @@ Jika log memunculkan pesan seperti Permission denied atau input/output error saa
 
 &nbsp;
 
-**3Reset dan Jalankan Ulang Stack**
+**3. Reset dan Jalankan Ulang Stack**
 
 Membersihkan sisa instalasi yang gagal
 
@@ -547,7 +547,7 @@ Let's systematically troubleshoot and get you into that dashboard.
 
 &nbsp;
 
-**1Force HTTPS Protocol in Your Browser**
+**1. Force HTTPS Protocol in Your Browser**
 
 The HTTPS Requirement
 
@@ -563,7 +563,7 @@ Make sure you are explicitly typing the https:// prefix:
 
 &nbsp;
 
-**2Verify the UniFi Application is Fully Initialized**
+**2. Verify the UniFi Application is Fully Initialized**
 
 Check Java Boot Status
 
@@ -583,7 +583,7 @@ Ensure there are no Java Out-Of-Memory (OOM) errors or database connection timeo
 
 &nbsp;
 
-**3Open the Ports in Ubuntu Firewall (UFW)**
+**3. Open the Ports in Ubuntu Firewall (UFW)**
 
 Ubuntu 24.04 Security
 
@@ -602,7 +602,7 @@ Allow traffic on the crucial UniFi ports by running:
 
 &nbsp;
 
-**4Check if the Port is Active on the Host**
+**4. Check if the Port is Active on the Host**
 
 Docker Proxy Test
 
@@ -637,7 +637,7 @@ Berikut adalah langkah cepat untuk menyelaraskan konfigurasi dan melakukan *rese
 
 &nbsp;
 
-**1Ubah MONGO\_AUTHSOURCE di File .env**
+**1. Ubah MONGO\_AUTHSOURCE di File .env**
 
 Koreksi Konfigurasi
 
@@ -655,7 +655,7 @@ Simpan perubahan dengan menekan CTRL+X, lalu Y, dan Enter.
 
 &nbsp;
 
-**2Hentikan Container & Bersihkan Database Lama**
+**2. Hentikan Container & Bersihkan Database Lama**
 
 Pembersihan Total
 
@@ -671,7 +671,7 @@ Karena kegagalan autentikasi sebelumnya mungkin membuat proses inisialisasi data
 
 &nbsp;
 
-**3Jalankan Kembali Stack Docker**
+**3. Jalankan Kembali Stack Docker**
 
 Menyalakan Ulang
 
@@ -715,7 +715,7 @@ Mari kita terapkan perubahan ini:
 
 &nbsp;
 
-**1Update Berkas init-mongo.js**
+**1. Update Berkas init-mongo.js**
 
 Perbaiki Lokasi User
 
@@ -740,7 +740,7 @@ Simpan dan keluar (CTRL+X, lalu Y, lalu Enter).
 
 &nbsp;
 
-**2Pastikan .env Menggunakan Database admin**
+**2. Pastikan .env Menggunakan Database admin**
 
 Kembalikan Parameter
 
@@ -758,7 +758,7 @@ Simpan dan keluar.
 
 &nbsp;
 
-**3Hapus Data Lama & Jalankan Ulang**
+**3. Hapus Data Lama & Jalankan Ulang**
 
 Reset Database
 
@@ -777,7 +777,7 @@ Agar MongoDB mengeksekusi ulang file init-mongo.js yang baru saja kita perbarui,
 
 &nbsp;
 
-**4Pantau Proses Booting UniFi**
+**4. Pantau Proses Booting UniFi**
 
 Verifikasi Log
 
@@ -813,7 +813,7 @@ Ikuti langkah perbaikan bersih berikut ini:
 
 &nbsp;
 
-**1Perbarui Berkas .env**
+**1. Perbarui Berkas .env**
 
 Koreksi Variabel
 
@@ -842,7 +842,7 @@ Simpan dengan menekan CTRL+X, lalu Y, dan Enter.
 
 &nbsp;
 
-**2Sesuaikan docker-compose.yml & Hapus File JS**
+**2. Sesuaikan docker-compose.yml & Hapus File JS**
 
 Sederhanakan Konfigurasi
 
@@ -897,7 +897,7 @@ Simpan dan keluar. Setelah itu, **hapus berkas init-mongo.js** yang sudah tidak 
 
 &nbsp;
 
-**3Reset Data Lama & Jalankan Ulang**
+**3. Reset Data Lama & Jalankan Ulang**
 
 Pembersihan Sisa Database
 
@@ -916,7 +916,7 @@ Untuk memastikan tidak ada sisa-sisa autentikasi lama yang korup di dalam folder
 
 &nbsp;
 
-**4Pantau Log Aplikasi UniFi**
+**4. Pantau Log Aplikasi UniFi**
 
 Uji Koneksi
 
@@ -967,7 +967,7 @@ Metode ini memaksa perangkat UniFi Anda untuk langsung melapor ke IP Server Ubun
 
 &nbsp;
 
-**1Cari IP Perangkat & Siapkan SSH**
+**1. Cari IP Perangkat & Siapkan SSH**
 
 Persiapan Koneksi
 
@@ -984,7 +984,7 @@ Buka terminal baru di komputer Anda, lalu masuk ke perangkat UniFi menggunakan S
 
 &nbsp;
 
-**2Kirim Perintah Inform Pertama**
+**2. Kirim Perintah Inform Pertama**
 
 Koneksi Tahap 1
 
@@ -998,7 +998,7 @@ Setelah berhasil masuk ke dalam sistem operasi perangkat UniFi via SSH, jalankan
 
 &nbsp;
 
-**3Klik Adopt di Web UI UniFi**
+**3. Klik Adopt di Web UI UniFi**
 
 Konfirmasi di Browser
 
@@ -1010,7 +1010,7 @@ Pergi ke menu **Devices**. Perangkat Anda sekarang seharusnya sudah muncul di sa
 
 &nbsp;
 
-**4Kirim Perintah Inform Kedua (Sangat Penting\!)**
+**4. Kirim Perintah Inform Kedua (Sangat Penting\!)**
 
 Kunci Koneksi
 
@@ -1065,210 +1065,3 @@ Keputusan ini diambil karena:
 Jadi, jika controller Anda berada di versi 8 ke atas, satu-satunya cara jika Anda benar-benar membutuhkan UI lama adalah dengan melakukan *downgrade* ke versi 7.x (seperti versi 7.6.126 yang kita buat di awal) dengan cara menghapus kontainer saat ini dan menginstal ulang menggunakan tag versi yang sesuai di file docker-compose.yml.
 
 ---
-
-*User prompt: saya ingin menyimpan semua semua chat dan catatan diatas menjadi file unifi\_controller\_7.6\_docker.md*
-
-Response: Seluruh percakapan, instruksi instalasi resmi, penanganan masalah (*troubleshooting*), hingga konfigurasi adopsi perangkat telah berhasil disimpan.
-
-Berkas ini telah disimpan ke Google Drive Anda:
-
-[unifi\_controller\_7.6\_docker.md](https://docs.google.com/document/d/1eaYoTNNHGL6dIoI1ODwbQgJ0WMu__Q8laaCyLyRo7Co/edit?usp=drivesdk&ouid=115057439099478201131&utm_source=gemini)
-
-\[file-tag: drive-uploaded-file-1eaYoTNNHGL6dIoI1ODwbQgJ0WMu\_\_Q8laaCyLyRo7Co\]
-
-### **Ingin Menyimpannya Langsung di Server Ubuntu Anda?**
-
-Jika Anda ingin berkas Markdown ini juga tersimpan langsung di server lokal Ubuntu Anda (di dalam folder \~/unifi-infra), cukup salin dan jalankan perintah *one-liner* berikut di terminal:
-
-`cat << 'EOF' > ~/unifi-infra/unifi_controller_7.6_docker.md`  
-`# Panduan Lengkap Instalasi UniFi Controller 7.6 di Docker (Ubuntu 24.04)`
-
-`Dokumen ini merupakan rangkuman lengkap dari seluruh langkah instalasi, konfigurasi berkas, troubleshooting MongoDB & Docker Compose, hingga prosedur adopsi perangkat UniFi Controller versi 7.6.`
-
-`---`
-
-`## 1. Persiapan & Instalasi Docker Engine di Ubuntu 24.04`
-
-`Langkah-langkah resmi untuk menambahkan repositori Docker dan menginstal Docker Engine serta Docker Compose Plugin:`
-
-`### Langkah 1: Update Sistem & Dependensi Dasar`  
-```` ```bash ````  
-`sudo apt-get update`  
-`sudo apt-get install -y ca-certificates curl`
-
-### **Langkah 2: Tambahkan GPG Key Resmi Docker**
-
-`sudo install -m 0755 -d /etc/apt/keyrings`  
-`sudo curl -fsSL [https://download.docker.com/linux/ubuntu/gpg](https://download.docker.com/linux/ubuntu/gpg) -o /etc/apt/keyrings/docker.asc`  
-`sudo chmod a+r /etc/apt/keyrings/docker.asc`
-
-### **Langkah 3: Tambahkan Repositori Docker ke APT Sources**
-
-`echo \`  
-&nbsp;&nbsp;`"deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] [https://download.docker.com/linux/ubuntu](https://download.docker.com/linux/ubuntu) \`  
-&nbsp;&nbsp;`$(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \`  
-&nbsp;&nbsp;`sudo tee /etc/apt/sources.list.d/docker.list > /dev/null`
-
-### **Langkah 4: Install Docker Engine & Plugin Compose**
-
-`sudo apt-get update`  
-`sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
-
-### **Langkah 5: Hak Akses Non-Root**
-
-`sudo usermod -aG docker $USER`  
-`newgrp docker`
-
-## **2\. Troubleshooting Docker Compose**
-
-Jika perintah docker compose version tidak ditemukan atau gagal dieksekusi:
-
-> 1. **Sintaks Baru (Spasi):** Docker Compose v2 adalah plugin resmi, gunakan docker compose (dengan spasi), bukan sintaks lawas docker-compose (dengan strip).  
-> 2. **Periksa Konflik Snap:**  
->    `which docker`
-
->    Jika mengarah ke /snap/bin/docker, hapus paket Docker Snap agar tidak tumpang tindih:  
->    `sudo snap remove docker`
-
-> 3. **Pastikan Layanan Docker Berjalan:**  
->    `sudo systemctl enable docker`  
->    `sudo systemctl start docker`  
->    `sudo systemctl status docker`
-
-> 4. **Alias Opsional (Pintasan):**  
->    `echo "alias docker-compose='docker compose'" >> ~/.bashrc`  
->    `source ~/.bashrc`
-
-## **3\. Struktur Direktori & Konfigurasi Stack**
-
-Buat direktori kerja khusus untuk konfigurasi UniFi:
-
-`mkdir -p ~/unifi-infra`  
-`cd ~/unifi-infra`
-
-### **File .env**
-
-Buat file .env (nano .env) untuk mengisolasi kredensial:
-
-`# Kredensial Utama MongoDB (Root)`  
-`MONGO_USER=rootadmin`  
-`MONGO_PASS=PasswordRootRahasia123!`  
-`MONGO_DBNAME=unifi`  
-`MONGO_HOST=unifi-db`  
-`MONGO_PORT=27017`  
-`MONGO_AUTHSOURCE=admin`
-
-`# Parameter Lingkungan Kontainer`  
-`TZ=Asia/Jakarta`  
-`PUID=1000`  
-`PGID=1000`
-
-### **File docker-compose.yml**
-
-Buat file docker-compose.yml (nano docker-compose.yml):
-
-`services:`  
-&nbsp;&nbsp;`unifi-db:`  
-&nbsp;&nbsp;&nbsp;&nbsp;`image: docker.io/mongo:4.4`  
-&nbsp;&nbsp;&nbsp;&nbsp;`container_name: unifi-db`  
-&nbsp;&nbsp;&nbsp;&nbsp;`environment:`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- MONGO_INITDB_ROOT_USERNAME=${MONGO_USER}`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- MONGO_INITDB_ROOT_PASSWORD=${MONGO_PASS}`  
-&nbsp;&nbsp;&nbsp;&nbsp;`volumes:`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- ./db:/data/db`  
-&nbsp;&nbsp;&nbsp;&nbsp;`restart: unless-stopped`
-
-&nbsp;&nbsp;`unifi-network-application:`  
-&nbsp;&nbsp;&nbsp;&nbsp;`image: lscr.io/linuxserver/unifi-network-application:7.6.126`  
-&nbsp;&nbsp;&nbsp;&nbsp;`container_name: unifi-network-application`  
-&nbsp;&nbsp;&nbsp;&nbsp;`environment:`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- PUID=${PUID}`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- PGID=${PGID}`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- TZ=${TZ}`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- MONGO_USER=${MONGO_USER}`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- MONGO_PASS=${MONGO_PASS}`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- MONGO_HOST=${MONGO_HOST}`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- MONGO_PORT=${MONGO_PORT}`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- MONGO_DBNAME=${MONGO_DBNAME}`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- MONGO_AUTHSOURCE=${MONGO_AUTHSOURCE}`  
-&nbsp;&nbsp;&nbsp;&nbsp;`volumes:`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- ./config:/config`  
-&nbsp;&nbsp;&nbsp;&nbsp;`ports:`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- "8443:8443"        # Web GUI Admin (HTTPS)`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- "10001:10001/udp"  # AP discovery (L2 adoption)`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- "8080:8080"        # Device communication / Inform port`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- "3478:3478/udp"    # UniFi STUN port`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- "8843:8843"        # Guest portal HTTPS`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- "8880:8880"        # Guest portal HTTP`  
-&nbsp;&nbsp;&nbsp;&nbsp;`restart: unless-stopped`  
-&nbsp;&nbsp;&nbsp;&nbsp;`depends_on:`  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`- unifi-db`
-
-## **4\. Rangkuman Troubleshooting Error & Solusinya**
-
-### **A. MongoDB Restart Loop (Illegal Instruction)**
-
-> * **Penyebab:** MongoDB 5.0 ke atas (termasuk v7.0) mewajibkan dukungan instruksi CPU AVX. Banyak VPS/VM yang tidak mendukung AVX.  
-> * **Solusi:** Gunakan image mongo:4.4 yang tidak memerlukan AVX.
-
-### **B. MongoDB Permission Denied**
-
-> * **Penyebab:** Direktori ./db dibuat oleh root, sedangkan user internal MongoDB (UID 999\) tidak memiliki izin tulis.  
-> * **Solusi:** Jalankan sudo chown \-R 999:999 ./db.
-
-### **C. Authentication Failed (Code 18 / UserNotFound for db admin)**
-
-> * **Penyebab:**  
-  1. Pada shell MongoDB 4.4, file JS inisialisasi tidak mendukung process.env.  
-  2. UniFi selalu mencari user autentikasi pada database admin.  
-> * **Solusi Bersih:** Hubungkan langsung menggunakan Root User yang didefinisikan di .env dan docker-compose.yml, sehingga file init-mongo.js tidak lagi diperlukan.
-
-### **D. Prosedur Reset Bersih Database**
-
-Setiap kali melakukan perubahan autentikasi atau versi MongoDB, bersihkan data lama:
-
-`docker compose down`  
-`sudo rm -rf ./db/*`  
-`docker compose up -d`
-
-## **5\. Menjalankan & Memverifikasi UniFi**
-
-> 1. **Jalankan Kontainer:**  
->    `docker compose up -d`
-
-> 2. **Pantau Log Inisialisasi:**  
->    `docker logs -f unifi-network-application`
-
-> 3. **Buka Port Firewall Ubuntu (UFW):**  
->    `sudo ufw allow 8443/tcp`  
->    `sudo ufw allow 8080/tcp`  
->    `sudo ufw allow 3478/udp`  
->    `sudo ufw allow 10001/udp`  
->    `sudo ufw reload`
-
-> 4. **Akses Web UI:** Buka browser dan navigasikan ke https://\<IP\_SERVER\_UBUNTU\>:8443 *(Wajib HTTPS)*.
-
-## **6\. Adopsi Perangkat (Layer 3 Adoption)**
-
-Karena kontainer berjalan dalam jaringan Docker Bridge, adopsi perangkat fisik dilakukan via SSH:
-
-> 1. Masuk ke Access Point / Switch via SSH:  
->    `ssh ubnt@<IP_PERANGKAT>`  
->    `# Default password: ubnt`
-
-> 2. Kirim perintah inform pertama:  
->    `set-inform http://<IP_SERVER_UBUNTU>:8080/inform`
-
-> 3. Buka Web GUI UniFi, buka menu **Devices**, lalu klik **Adopt**.  
-> 4. Kembali ke terminal SSH dan kirim perintah inform kedua untuk mengunci koneksi:  
->    `set-inform http://<IP_SERVER_UBUNTU>:8080/inform`
-
-## **7\. Penjelasan Antarmuka (Legacy UI vs New UI)**
-
-> * **Pada UniFi 7.6:** Opsi beralih ke Legacy UI ada di **Settings \-\> System \-\> Advanced \-\> Interface \-\> matikan New User Interface**.  
-> * **Pada UniFi 8.0 ke atas (v8, v9, v10):** Ubiquiti telah menghapus secara permanen fitur Legacy UI. Jika membutuhkan UI lama, tetap gunakan versi 7.6. EOF
-
-&nbsp;
-
----
-
