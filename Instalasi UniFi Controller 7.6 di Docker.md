@@ -12,7 +12,7 @@ Berikut adalah panduan lengkap langkah demi langkah yang disesuaikan dengan doku
 
 &nbsp;
 
-**1Update Sistem & Install Dependensi Awal**
+**1. Update Sistem & Install Dependensi Awal**
 
 Langkah Resmi Docker
 
@@ -25,7 +25,7 @@ Langkah pertama adalah memastikan indeks paket lokal Anda diperbarui dan depende
 
 &nbsp;
 
-**2Tambahkan GPG Key Resmi Docker**
+**2. Tambahkan GPG Key Resmi Docker**
 
 Langkah Resmi Docker
 
@@ -39,7 +39,7 @@ Unduh dan daftarkan kunci GPG resmi milik Docker agar sistem Ubuntu dapat memver
 
 &nbsp;
 
-**3Daftarkan Repositori Docker ke Sistem**
+**3. Daftarkan Repositori Docker ke Sistem**
 
 Langkah Resmi Docker
 
